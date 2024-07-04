@@ -56,7 +56,7 @@ const Navbar = () => {
             <Image src="/seniorWoman.png" height={44} width={44} alt="Profile picture" />
             <span className="block">
               <p className="font-bold">Dr.Jose Simmons</p>
-              <p>General Practitioner</p>
+              <p className="text-DarkSliver text-sm">General Practitioner</p>
             </span>
           </div>
           <Image src="/settings.svg" width={19} height={20} alt="settings icon" className="hidden lg:block" />
