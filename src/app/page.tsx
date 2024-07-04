@@ -19,7 +19,7 @@ const Dashboard = () => {
       <Navbar />
       <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-6 gap-4 md:gap-6 py-8">
          {/* Sidebar */}
-         <div className={`bg-white lg:relative  grid rounded-2xl md:col-span-3 h-auto  ${isSidebarOpen ? 'fixed ' : 'hidden lg:block'}`}>
+         <div className={`bg-white lg:relative  grid rounded-2xl md:col-span-3 h-auto  ${isSidebarOpen ? 'absolute ' : 'hidden lg:block'}`}>
           <Sidebar />
         </div>
 
