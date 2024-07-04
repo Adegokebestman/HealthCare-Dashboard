@@ -138,14 +138,14 @@ const PatientChart: React.FC = () => {
       </div>
 
       <div className='bg-MistyRose rounded-xl px-6 py-4 col-span-1 md:col-span-2'>
-        <Image src='/respiratory rate.svg' width={96} height={96} alt='respiratory rate' />
+        <Image src='/temperature.svg' width={96} height={96} alt='respiratory rate' />
         <p className='py-2'>Temperature </p>
         <h1 className='text-lg md:text-[30px] font-extrabold text-deepdark'>{latestTemperature}<sup>o</sup> F</h1>
         <p className='pt-6'>{latestTemperatureLevel}</p>
       </div>
 
       <div className='bg-LightPink rounded-xl px-6 py-4 col-span-1 md:col-span-2'>
-        <Image src='/respiratory rate.svg' width={96} height={96} alt='respiratory rate' />
+        <Image src='/HeartBPM.svg' width={96} height={96} alt='respiratory rate' />
         <p className='py-2'>Heart Rate</p>
         <h1 className='text-lg md:text-[30px] font-extrabold text-deepdark'>{latestHeartRate} bpm</h1>
         <p className='pt-6'>{latestHeartRateLevel}</p>
