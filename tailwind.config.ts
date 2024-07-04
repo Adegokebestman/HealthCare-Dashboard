@@ -22,7 +22,7 @@ const config: Config = {
         "Magnolia": "#F4F0FE",
         "deepdark": "#072635",
         "lighterGray": "#E3E4E6",
-        "DarkSliver ": "#707070",
+        "DarkSliver": "#707070",
         "LightGray": "#F6F7F8",
       },
     },

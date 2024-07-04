@@ -11,7 +11,7 @@ const PatientProfile: React.FC = () => {
   }
 
   return (
-    <div className=''>
+    <div>
       <div className='flex justify-center items-center pt-6'>
         <Image
           src={selectedPatient.profile_picture}

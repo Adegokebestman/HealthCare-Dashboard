@@ -45,3 +45,10 @@ select.noAppearance {
     text-wrap: balance;
   }
 } */
+
+@media (min-width: 1024px) {
+  .tablet {
+      grid-column: span 6 / span 6 !important;
+  }
+}
+

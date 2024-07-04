@@ -22,7 +22,7 @@ const Sidebar: React.FC = () => {
               <Image src={patient.profile_picture} width={44} height={44} alt='Profile picture' className='rounded-full' />
               <div>
                 <p className='font-bold'>{patient.name}</p>
-                <p>{patient.age} years old</p>
+                <p className='text-DarkSliver text-[14px]'>{patient.gender} ,{patient.age}</p>
               </div>
             </div>
             <Image src='more_hori.svg' width={18} height={3} alt='more icon' />

@@ -15,21 +15,21 @@ const Dashboard = () => {
     setIsSidebarOpen(!isSidebarOpen);
   }
   return (
-    <main className="py-4 px-6">
+    <main className="py-4 md:px-6 px-3">
       <Navbar />
-      <div className="grid grid-cols-auto md:grid-cols-12 md:grid-rows-12 gap-6 py-8">
+      <div className="grid grid-cols-1 md:grid-cols-12 md:grid-rows-6 gap-4 md:gap-6 py-8">
          {/* Sidebar */}
-         <div className={`bg-white md:relative  grid rounded-2xl md:col-span-3 h-auto  ${isSidebarOpen ? 'fixed ' : 'hidden md:block'}`}>
+         <div className={`bg-white lg:relative  grid rounded-2xl md:col-span-3 h-auto  ${isSidebarOpen ? 'fixed ' : 'hidden lg:block'}`}>
           <Sidebar />
         </div>
 
         {/* Main Content */}
-        <main className="md:col-span-6 col-span-2">
+        <main className="tablet md:col-span-8   col-span-2 ">
           <div className="bg-white rounded-2xl p-6">
              {/* Toggle button/icon for tablet and smaller screens */}
-             <div className="md:hidden">
-              <button className="absolute z-20 top-6 left-6 focus:outline-none" onClick={toggleSidebar}>
-                <Image src="/download.svg" width={24} height={24} alt="Toggle sidebar" />
+             <div className="lg:hidden ">
+              <button className="absolute z-20 bg-green rounded-full py-2 px-2 bottom-6 right-8 focus:outline-none" onClick={toggleSidebar}>
+                <Image src="/sidebar.png" width={32} height={32} alt="Toggle sidebar" />
               </button>
             </div>
             <h1 className="text-deepdark font-extrabold text-2xl mb-6">Diagnosis History</h1>
@@ -43,12 +43,12 @@ const Dashboard = () => {
         </main>
 
         {/* Aside Container */}
-        <aside className="md:col-span-3 relative bottom-4">
-          <div className="bg-white rounded-2xl p-6 mb-6">
+        <aside className="md:col-span-4 lg:col-span-3 md:relative bottom-4 ">
+          <div className="bg-white rounded-2xl  mb-6">
             <PatientProfile />
           </div>
 
-          <div className="bg-white rounded-2xl">
+          <div className="bg-white rounded-2xl ">
             <LabResult />
           </div>
         </aside>

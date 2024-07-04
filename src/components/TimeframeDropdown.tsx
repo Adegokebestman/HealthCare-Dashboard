@@ -8,7 +8,7 @@ interface TimeframeDropdownProps {
 
 const TimeframeDropdown: React.FC<TimeframeDropdownProps> = ({ selectedTimeframe, onChange }) => {
   return (
-    <div className="mb-4 py-2 px-4 flex justify-between items-center w-[400px]">
+    <div className="mb-4 py-2 px-4 flex justify-between items-center ">
         <h1 className='text'>Blood Pressure</h1>
 
       <select

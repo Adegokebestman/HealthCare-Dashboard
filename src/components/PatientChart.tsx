@@ -97,7 +97,7 @@ const PatientChart: React.FC = () => {
         <Line data={data} options={options} />
         </div>
       </div>
-      <div className=" col-span-2">
+      <div className=" col-span-1 md:col-span-2">
         <div>
         <div className="text-lg flex items-center py-2 gap-2">
           <div className='rounded-full w-3 h-3 bg-Orchid'></div>
@@ -112,7 +112,7 @@ const PatientChart: React.FC = () => {
       <hr className='w-full border-[2px] my-2 bg-Silver' />
       {/* end of line cutter */}
           <div className="text-lg flex items-center gap-2 py-2">
-          <div className='rounded-full w-3 h-3 bg-Orchid'></div>
+          <div className='rounded-full w-3 h-3 bg-Purple'></div>
           <p className='text-sm font-bold text-deepdark'>Diastolic: </p>
           </div>
           <span className='text-[22px] font-bold text-deepdark'>{latestDiastolic}</span>
@@ -128,26 +128,26 @@ const PatientChart: React.FC = () => {
     </div>
 
 {/* temp */}
-<div className='grid grid-cols-1 md:grid-cols-6 gap-4 py-6'>
+<div className='grid grid-cols-2 md:grid-cols-6 gap-4 py-6'>
 
-      <div className='bg-LightBlue rounded-xl px-6 py-4 col-span-2'>
+      <div className='bg-LightBlue rounded-xl px-6 py-4 col-span-1 md:col-span-2'>
         <Image src='/respiratory rate.svg' width={96} height={96} alt='respiratory rate' />
-        <p>Respiratory Rate</p>
-        <h1 className='text-[30px] font-extrabold text-deepdark'>{latestRespiratoryRate} bpm</h1>
+        <p className='py-2'>Respiratory Rate</p>
+        <h1 className='text-lg md:text-[30px] font-extrabold text-deepdark'>{latestRespiratoryRate} bpm</h1>
         <p className='pt-6'>{latestRespiratoryLevel}</p>
       </div>
 
-      <div className='bg-MistyRose rounded-xl px-6 py-4 col-span-2'>
+      <div className='bg-MistyRose rounded-xl px-6 py-4 col-span-1 md:col-span-2'>
         <Image src='/respiratory rate.svg' width={96} height={96} alt='respiratory rate' />
-        <p>Temperature </p>
-        <h1 className='text-[30px] font-extrabold text-deepdark'>{latestTemperature}<sup>o</sup> F</h1>
+        <p className='py-2'>Temperature </p>
+        <h1 className='text-lg md:text-[30px] font-extrabold text-deepdark'>{latestTemperature}<sup>o</sup> F</h1>
         <p className='pt-6'>{latestTemperatureLevel}</p>
       </div>
 
-      <div className='bg-LightPink rounded-xl px-6 py-4 col-span-2'>
+      <div className='bg-LightPink rounded-xl px-6 py-4 col-span-1 md:col-span-2'>
         <Image src='/respiratory rate.svg' width={96} height={96} alt='respiratory rate' />
-        <p>Heart Rate</p>
-        <h1 className='text-[30px] font-extrabold text-deepdark'>{latestHeartRate} bpm</h1>
+        <p className='py-2'>Heart Rate</p>
+        <h1 className='text-lg md:text-[30px] font-extrabold text-deepdark'>{latestHeartRate} bpm</h1>
         <p className='pt-6'>{latestHeartRateLevel}</p>
       </div>
       </div>
