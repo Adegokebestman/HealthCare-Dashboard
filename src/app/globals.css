@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -14,20 +14,34 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+background-color: #F6F7F8;
+}
+select.noAppearance {
+  background: transparent;
+}
+.custom-scrollbar {
+  scrollbar-width: auto; /* For Firefox */
+  scrollbar-color: black; /* For Firefox */
 }
 
-@layer utilities {
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Width of vertical scrollbar */
+  height: 8px; /* Height of horizontal scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: black; /* Color of the scrollbar thumb */
+  border-radius: 8px; /* Rounded corners of the thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #E3E4E6; /* Background of the scrollbar track */
+}
+/* @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
